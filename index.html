@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Handcrafted Charred Mushroom Lamp</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0e0e0e;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* NAVIGATION */
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(10,10,10,0.85);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  border-bottom: 1px solid #222;
+}
+
+nav h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #d4a373;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 80px 10%;
+  gap: 50px;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: #bbb;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.hero-text button {
+  background: #d4a373;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-text button:hover {
+  background: #e6b88f;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 10%;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* GRID CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #161616;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #222;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #d4a373;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 80px 10%;
+  background: #151515;
+  border-top: 1px solid #222;
+}
+
+.cta h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.cta button {
+  background: #d4a373;
+  border: none;
+  padding: 15px 50px;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta button:hover {
+  background: #e6b88f;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+  font-size: 0.9rem;
+  border-top: 1px solid #1f1f1f;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text p {
+    margin: auto auto 30px;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>Mushroom Lamp</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#dimensions">Dimensions</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Charred Mushroom Lamp</h1>
+    <p>
+      A sculptural wooden lamp carved from solid pine and finished with a dramatic charred texture.
+      Designed to cast a warm, calming glow in modern and natural interiors.
+    </p>
+    <button>Order Yours</button>
+  </div>
+  <img src="your-image.jpg" alt="Charred Mushroom Lamp">
+</section>
+
+<section id="about">
+  <h2 class="section-title">About the Lamp</h2>
+  <p style="text-align:center; max-width:700px; margin:auto; color:#bbb;">
+    Each piece is individually hand-carved from locally sourced pine wood.
+    The charred surface highlights the organic grain patterns,
+    creating a unique sculptural object that doubles as functional lighting.
+  </p>
+</section>
+
+<section id="features">
+  <h2 class="section-title">Features</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Solid Pine Wood</h3>
+      <p>Locally sourced pine with visible natural grain and texture.</p>
+    </div>
+    <div class="card">
+      <h3>Hand-Carved Form</h3>
+      <p>Each mushroom shape is sculpted by hand — no two pieces are identical.</p>
+    </div>
+    <div class="card">
+      <h3>Charred Finish</h3>
+      <p>Burned surface treatment enhances depth, contrast, and durability.</p>
+    </div>
+    <div class="card">
+      <h3>Warm Ambient Light</h3>
+      <p>Soft glow perfect for bedside tables, reading nooks, and cozy spaces.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2 class="section-title">Gallery</h2>
+  <div class="gallery">
+    <img src="your-image.jpg" alt="Lamp view 1">
+    <img src="your-image2.jpg" alt="Lamp view 2">
+    <img src="your-image3.jpg" alt="Lamp view 3">
+  </div>
+</section>
+
+<section id="dimensions">
+  <h2 class="section-title">Dimensions</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Height</h3>
+      <p>35 cm / 14 in</p>
+    </div>
+    <div class="card">
+      <h3>Diameter</h3>
+      <p>28 cm / 11 in</p>
+    </div>
+    <div class="card">
+      <h3>Material</h3>
+      <p>Solid Pine Wood, finished with natural oil</p>
+    </div>
+    <div class="card">
+      <h3>Power</h3>
+      <p>220–240V wall-powered, EU plug included</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Bring Warmth Into Your Space</h2>
+  <p>A timeless piece blending craftsmanship, nature, and soft illumination.</p>
+  <button>Order Now</button>
+</section>
+
+<footer>
+  © 2026 Handcrafted Wooden Lighting — Each piece uniquely made.
+</footer>
+
+</body>
+</html>
